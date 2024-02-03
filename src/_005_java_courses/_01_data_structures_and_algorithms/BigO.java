@@ -25,4 +25,8 @@ public class BigO {
             }
         }
     }
+
+    public static int addItems(int n) {
+        return n + n + n; // O(1) most efficient
+    }
 }
