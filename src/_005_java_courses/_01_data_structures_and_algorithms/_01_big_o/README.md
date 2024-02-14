@@ -40,3 +40,89 @@ public int linearSearch(int[] arr, int target) {
 ```
 
 In the case of the linear search algorithm, the code snippet iterates through each element in the array, resulting in a time complexity of ***O(n)***, where “n” represents the size of the array.
+
+# Big O Rules
+
+## Best case
+
+The best case refers to the scenario in which an algorithm performs with the minimum possible time or space complexity for a given problem.
+
+```java
+public int linearSearch(int[] arr, int target) {
+    for (int i = 0; i < arr.length; i++) {
+        if (arr[i] == target) {
+            return i;
+        }
+    }
+    return -1;
+}
+```
+
+In the above function, the best scenario is when the element being searched for is found at the very beginning of the array. In this case, the algorithm would only need to perform a single comparison, resulting in a time complexity of O(1).
+
+## Average case
+The average case refers to the expected or typical performance of an algorithm when considering inputs of varying sizes and distributions.
+
+```java
+public int linearSearch(int[] arr, int target) {
+    for (int i = 0; i < arr.length; i++) {
+        if (arr[i] == target) {
+            return i;
+        }
+    }
+    return -1;
+}
+```
+
+In the above function, the element being searched for can be located randomly within the range of 0 to arr’s length (excluding the endpoint).
+
+## Worst case
+The worst case refers to the scenario in which an algorithm exhibits the maximum time or space complexity for a given problem. It represents the most unfavorable inputs and conditions.
+
+```java
+public int linearSearch(int[] arr, int target) {
+    for (int i = 0; i < arr.length; i++) {
+        if (arr[i] == target) {
+            return i;
+        }
+    }
+    return -1;
+}
+```
+In the above function, the element being searched for is found at the end of the array. In this case, the algorithm would need to iterate through the whole array to find the element, resulting in a time complexity of O(n).
+
+## Removing Constants
+
+When analyzing the time and space complexity of an algorithm, we can simplify the expressions by disregarding constant factors. Let’s consider the example below.
+
+```java
+int maxVal = Integer.MIN_VALUE;
+for (int i = 0; i < array.length; i++) { // n = array.length
+    if (maxVal < array[i]) { // O(1)
+        maxVal = array[i]; // O(1)
+    }
+}
+```
+Sum up the complexity of the above snippet.
+
+```
+Compelxity = n x (O(1) + O(1))
+           = n x O(2) = O(2n) = O(n)
+```
+
+## Dropping Non-Dominants
+
+In Big O notation, the dominant term is the one that grows the fastest as the input size increases. The non-dominant term has a lesser impact on the overall complexity.
+
+Dropping non-dominant terms involves focusing only on the dominant terms and disregarding the non-dominant terms.
+
+```
+O(n² + n + 1) = O(n²) // dropping the non-dominant terms
+```
+In the example above, the constant term 1 and the term n are disregarded since they do not significantly affect the growth rate compared to the quadratic term **n²**.
+
+However, when dealing with a complexity that involves multiple variables, reducing it to a simpler form is not straightforward. For instance, in the case of the time complexity expressed as O(n² + m), it’s not possible to simplify it further without specific knowledge about the values of n and m.
+
+![image](https://miro.medium.com/v2/resize:fit:720/format:webp/1*FCBQEMtfGZEJX1-ly4R1FA.png)
+
+

@@ -53,6 +53,24 @@ public class BigO {
     }
 
     // Different terms for inputs
+    public static void printItems(int a, int b) {
+        for (int i = 0; i < a; i++) {
+            System.out.println(i);
+        }
+
+        for (int j = 0; j < b; j++) {
+            System.out.println(j);
+        }
+        // -> O(a + b)
+
+        for (int i = 0; i < a; i++) {
+            System.out.println(i);
+            for (int j = 0; j < b; j++) {
+                System.out.println(j);
+            }
+        }
+        // -> 0(a * b)
+    }
 
 
 }
