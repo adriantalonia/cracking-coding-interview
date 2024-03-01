@@ -126,3 +126,5 @@ However, when dealing with a complexity that involves multiple variables, reduci
 ![image](https://miro.medium.com/v2/resize:fit:720/format:webp/1*FCBQEMtfGZEJX1-ly4R1FA.png)
 
 
+## Common Data Structure Operations
+
