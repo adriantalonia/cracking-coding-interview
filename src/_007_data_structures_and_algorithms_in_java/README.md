@@ -14,7 +14,7 @@ various data structures described in this book.
 | Array          | Quick insertion, very fast access if index known. | Slow search, slow deletion,fixed size.   |
 | Ordered array  | Quicker search than unsorted array.               | Slow insertion and deletion, fixed size. |
 | Stack          | Provides last-in, first-out access.               | Slow access toother items.               |
-|                |                                                   |                                          |
+| Queue          | Provides first-in, first-out access.              | Slow access toother items.               |
 |                |                                                   |                                          |
 |                |                                                   |                                          |
 |                |                                                   |                                          |
