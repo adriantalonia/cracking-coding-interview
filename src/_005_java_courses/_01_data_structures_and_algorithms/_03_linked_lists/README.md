@@ -15,3 +15,15 @@
 - The list has a head, which is a reference to the first node in the list, and a tail, which is a reference to the last node in the list.
 - The nodes are not stored in a contiguous block of memory, but instead, each node holds the address of the next node in the list.
 - Accessing elements in a singly linked list requires traversing the list from the head to the desired node, as there is no direct access to a specific node in memory.
+
+### Types of linked lists:
+There are mainly three types of linked lists:
+
+1) Single-linked list
+2) Double linked list
+3) Circular linked list
+
+## 1. Single-linked list:
+
+In a singly linked list, each node contains a reference to the next node in the sequence. Traversing a singly linked list is done in a forward direction.
+![image](https://media.geeksforgeeks.org/wp-content/uploads/20220712172013/Singlelinkedlist.png)
